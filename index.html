@@ -1,149 +1,654 @@
-<p>
-            رحلتك القادمة تبدأ بخطوة. نحن هنا لنقرّب المسافات
-            ونساعدك في الوصول إلى وجهتك بكل سهولة وراحة.
-          </p>
-          <a class="btn" href="https://wa.me/249964860194">
-            ابدأ رحلتك معنا ↗
-          </a>
-        </div>
-      </div>
-      <div class="plane">✈</div>
-    </section>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071d35">
+<meta name="description" content="رينز للسفر والسياحة وتذاكر الطيران">
+<title>رينز | REINS TRAVEL & TOURISM</title>
 
-    <section class="section" id="about">
-      <div class="container about">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zain:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
-        <img
-          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
-          alt="وجهة سياحية"
-        >
+<style>
+:root {
+  --navy:#071d35;
+  --blue:#087fbd;
+  --sky:#54c7f5;
+  --light:#eaf7ff;
+  --muted:#718398;
+}
 
-        <div>
-          <span>من نحن</span>
-          <h2>مرحباً بك في رينز</h2>
-          <p>
-            نحن وكالة رينز للسفر والسياحة، نعمل على تقديم خدمات السفر
-            وتذاكر الطيران، ونسعى لتوفير تجربة سفر سهلة ومميزة لكل
-            مسافر يبحث عن وجهته القادمة.
-          </p>
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-          <div class="features">
-            <div>✓ اهتمام بتفاصيل رحلتك</div>
-            <div>✓ متابعة ومساعدة قبل السفر</div>
-            <div>✓ تواصل مباشر وسهل</div>
-          </div>
-        </div>
+html {
+  scroll-behavior:smooth;
+}
 
-      </div>
-    </section>
+body {
+  font-family:'Zain',sans-serif;
+  background:#f7fbff;
+  color:var(--navy);
+  line-height:1.8;
+}
 
-    <section class="section services" id="services">
-      <div class="container">
+a {
+  text-decoration:none;
+}
 
-        <div class="section-title">
-          <span>ماذا نقدم؟</span>
-          <h2>خدماتنا</h2>
-          <p>نرافقك في كل خطوة، من التخطيط وحتى الوصول.</p>
-        </div>
+.container {
+  width:90%;
+  max-width:1150px;
+  margin:auto;
+}
 
-        <div class="cards">
+/* HEADER */
 
-          <div class="card">
-            <div class="icon">✈️</div>
-            <h3>تذاكر الطيران</h3>
-            <p>
-              مساعدتك في البحث عن رحلات الطيران واختيار ما يناسب
-              وجهتك وموعدك.
-            </p>
-          </div>
+header {
+  background:rgba(255,255,255,.96);
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 3px 25px rgba(7,29,53,.07);
+  backdrop-filter:blur(12px);
+}
 
-          <div class="card">
-            <div class="icon">🌍</div>
-            <h3>السفر والسياحة</h3>
-            <p>
-              نساعدك في التخطيط لرحلتك القادمة واكتشاف وجهات جديدة.
-            </p>
-          </div>
+nav {
+  min-height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
 
-          <div class="card">
-            <div class="icon">🧳</div>
-            <h3>خدمة المسافرين</h3>
-            <p>
-              اهتمام ومتابعة لتجربة سفر أكثر سهولة وراحة.
-            </p>
-          </div>
+.logo {
+  color:var(--navy);
+  font-size:30px;
+  font-weight:900;
+  line-height:1.1;
+}
 
-        </div>
-      </div>
-    </section>
+.logo small {
+  display:block;
+  color:var(--blue);
+  font-size:11px;
+  letter-spacing:1.5px;
+}
 
-    <section class="callout">
-      <div class="container">
-        <h2>جاهز لرحلتك القادمة؟</h2>
-        <p>تواصل معنا ودعنا نساعدك في اتخاذ أول خطوة.</p>
-        <a class="btn" href="https://wa.me/249964860194">
-          تواصل عبر واتساب ↗
-        </a>
-      </div>
-    </section>
+.nav-links {
+  display:flex;
+  gap:25px;
+}
 
-    <section class="section" id="contact">
-      <div class="container">
+.nav-links a {
+  color:var(--navy);
+  font-size:18px;
+  font-weight:700;
+}
 
-        <div class="section-title">
-          <span>نحن قريبون منك</span>
-          <h2>تواصل معنا</h2>
-          <p>يسعدنا استقبال رسالتك والإجابة عن استفساراتك.</p>
-        </div>
+.nav-links a:hover {
+  color:var(--blue);
+}
 
-        <div class="contact-grid">
+.btn {
+  display:inline-block;
+  background:linear-gradient(120deg,var(--blue),#075b9c);
+  color:white;
+  padding:11px 26px;
+  border-radius:35px;
+  font-size:19px;
+  font-weight:800;
+  box-shadow:0 8px 22px rgba(8,127,189,.25);
+  transition:.3s;
+}
 
-          <div class="contact-box">
-            <h2>خلّينا نخطط لرحلتك</h2>
-            <p>
-              أرسل لنا رسالة على واتساب، وسنكون سعداء بمساعدتك.
-            </p>
-            <a class="whatsapp" href="https://wa.me/249964860194">
-              ☏ واتساب · +249 964 860 194
-            </a>
-          </div>
+.btn:hover {
+  transform:translateY(-4px);
+}
 
-          <div class="social-grid">
-            <div class="social">
-              <h3>Instagram</h3>
-              <p>قريباً</p>
-            </div>
+/* HERO */
 
-            <div class="social">
-              <h3>Twitter / X</h3>
-              <p>قريباً</p>
-            </div>
+.hero {
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  color:white;
+  background:
+    linear-gradient(90deg,rgba(3,19,37,.88),rgba(4,39,69,.48)),
+    url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=85")
+    center/cover no-repeat;
+}
 
-            <div class="social">
-              <h3>Facebook</h3>
-              <p>قريباً</p>
-            </div>
+.hero-content {
+  max-width:680px;
+  padding:100px 0;
+  animation:appear 1s ease;
+}
 
-            <div class="social">
-              <h3>REINS</h3>
-              <p>تابعونا للمزيد</p>
-            </div>
-          </div>
+.tag {
+  display:inline-block;
+  padding:7px 20px;
+  border:1px solid rgba(255,255,255,.5);
+  border-radius:30px;
+  color:#d9f3ff;
+  background:rgba(255,255,255,.12);
+  font-size:18px;
+}
 
-        </div>
-      </div>
-    </section>
+.hero h1 {
+  font-size:clamp(55px,8vw,90px);
+  line-height:1.08;
+  margin:25px 0;
+  font-weight:900;
+}
 
-  </main>
+.hero h1 span {
+  color:#7dd3fc;
+}
 
-  <footer>
-    <div class="logo">
+.hero p {
+  font-size:24px;
+  color:#e4f4ff;
+  margin-bottom:30px;
+  max-width:600px;
+}
+
+.hero .btn {
+  background:white;
+  color:var(--navy);
+}
+
+.plane {
+  position:absolute;
+  left:8%;
+  bottom:70px;
+  font-size:75px;
+  animation:fly 5s ease-in-out infinite;
+}
+
+@keyframes fly {
+  0%,100% { transform:translateY(0) rotate(-8deg); }
+  50% { transform:translateY(-22px) rotate(0deg); }
+}
+
+@keyframes appear {
+  from { opacity:0; transform:translateY(25px); }
+  to { opacity:1; transform:translateY(0); }
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+  padding:85px 0;
+}
+
+.section-title {
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.section-title span {
+  color:var(--blue);
+  font-size:19px;
+  font-weight:800;
+}
+
+.section-title h2 {
+  color:var(--navy);
+  font-size:44px;
+  line-height:1.3;
+}
+
+.section-title p {
+  color:var(--muted);
+  font-size:20px;
+}
+
+/* ABOUT */
+
+.about {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+
+.about img {
+  width:100%;
+  height:400px;
+  object-fit:cover;
+  border-radius:25px;
+  box-shadow:0 15px 40px rgba(7,29,53,.15);
+}
+
+.about h2 {
+  font-size:42px;
+  color:var(--navy);
+  margin-bottom:15px;
+}
+
+.about p {
+  font-size:21px;
+  color:var(--muted);
+}
+
+.features {
+  margin-top:20px;
+  font-size:20px;
+  font-weight:700;
+}
+
+.features div {
+  margin:8px 0;
+}
+
+/* SERVICES */
+
+.services {
+  background:var(--light);
+}
+
+.cards {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.card {
+  background:white;
+  padding:30px 25px;
+  border-radius:22px;
+  border:1px solid #dceefa;
+  box-shadow:0 10px 30px rgba(7,29,53,.06);
+  transition:.3s;
+}
+
+.card:hover {
+  transform:translateY(-8px);
+  box-shadow:0 15px 35px rgba(8,127,189,.15);
+}
+
+.icon {
+  width:62px;
+  height:62px;
+  display:grid;
+  place-items:center;
+  background:#dff4ff;
+  border-radius:18px;
+  font-size:32px;
+  margin-bottom:15px;
+}
+
+.card h3 {
+  color:var(--navy);
+  font-size:27px;
+}
+
+.card p {
+  color:var(--muted);
+  font-size:19px;
+}
+
+/* CALL TO ACTION */
+
+.callout {
+  padding:65px 0;
+  color:white;
+  background:linear-gradient(120deg,#061c35,#087fbd);
+  text-align:center;
+}
+
+.callout h2 {
+  font-size:40px;
+}
+
+.callout p {
+  font-size:21px;
+  margin-bottom:22px;
+  color:#d8efff;
+}
+
+.callout .btn {
+  background:white;
+  color:var(--navy);
+}
+
+/* CONTACT */
+
+.contact-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.contact-box {
+  background:var(--navy);
+  color:white;
+  border-radius:25px;
+  padding:35px;
+}
+
+.contact-box h2 {
+  font-size:36px;
+}
+
+.contact-box p {
+  color:#c9e3f5;
+  font-size:20px;
+  margin-bottom:22px;
+}
+
+.whatsapp {
+  display:inline-block;
+  background:#20bd70;
+  color:#06351f;
+  border-radius:30px;
+  padding:12px 23px;
+  font-size:20px;
+  font-weight:900;
+}
+
+.social-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.social {
+  background:white;
+  border:1px solid #e0edf6;
+  border-radius:18px;
+  padding:22px;
+  transition:.3s;
+}
+
+.social:hover {
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(7,29,53,.08);
+}
+
+.social h3 {
+  font-size:23px;
+  color:var(--navy);
+}
+
+.social p {
+  color:var(--muted);
+}
+
+/* FOOTER */
+
+footer {
+  background:#041426;
+  color:white;
+  text-align:center;
+  padding:40px 15px;
+}
+
+footer .logo {
+  color:white;
+  margin-bottom:12px;
+}
+
+footer .logo small {
+  color:#70cfff;
+}
+
+footer p {
+  color:#c5d9e8;
+}
+
+/* MOBILE */
+
+@media(max-width:750px) {
+  .nav-links {
+    display:none;
+  }
+
+  .hero {
+    min-height:590px;
+    background-position:58% center;
+  }
+
+  .hero-content {
+    padding:80px 0;
+  }
+
+  .hero p {
+    font-size:21px;
+  }
+
+  .about,
+  .contact-grid {
+    grid-template-columns:1fr;
+  }
+
+  .cards {
+    grid-template-columns:1fr;
+  }
+
+  .about img {
+    height:280px;
+  }
+
+  .section {
+    padding:60px 0;
+  }
+
+  .plane {
+    font-size:50px;
+    bottom:30px;
+  }
+}
+
+@media(max-width:420px) {
+  .social-grid {
+    grid-template-columns:1fr 1fr;
+  }
+
+  .hero h1 {
+    font-size:55px;
+  }
+
+  .section-title h2 {
+    font-size:36px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="container">
+    <a href="#home" class="logo">
       رينز
       <small>REINS TRAVEL & TOURISM</small>
+    </a>
+
+    <div class="nav-links">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">من نحن</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#contact">تواصل معنا</a>
     </div>
-    <p>رينز للسفر والسياحة</p>
-    <p>جميع الحقوق محفوظة © 2026</p>
-  </footer>
+
+    <a class="btn" href="https://wa.me/249964860194">احجز الآن</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <span class="tag">✈ نقرّب ليك وجهتك</span>
+
+      <h1>
+        العالم<br>
+        <span>ينتظرك.</span>
+      </h1>
+
+      <p>
+        رحلتك القادمة تبدأ بخطوة. نحن هنا لنقرّب المسافات
+        ونساعدك في الوصول إلى وجهتك بكل سهولة وراحة.
+      </p>
+
+      <a class="btn" href="https://wa.me/249964860194">
+        ابدأ رحلتك معنا ↗
+      </a>
+    </div>
+  </div>
+
+  <div class="plane">✈</div>
+</section>
+
+<section class="section" id="about">
+  <div class="container about">
+
+    <img
+      src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
+      alt="وجهة سياحية"
+    >
+
+    <div>
+      <span>من نحن</span>
+      <h2>مرحباً بك في رينز</h2>
+
+      <p>
+        نحن وكالة رينز للسفر والسياحة، نعمل على تقديم خدمات السفر
+        وتذاكر الطيران، ونسعى لتوفير تجربة سفر سهلة ومميزة لكل
+        مسافر يبحث عن وجهته القادمة.
+      </p>
+
+      <div class="features">
+        <div>✓ اهتمام بتفاصيل رحلتك</div>
+        <div>✓ متابعة ومساعدة قبل السفر</div>
+        <div>✓ تواصل مباشر وسهل</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <div class="container">
+
+    <div class="section-title">
+      <span>ماذا نقدم؟</span>
+      <h2>خدماتنا</h2>
+      <p>نرافقك في كل خطوة، من التخطيط وحتى الوصول.</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">✈️</div>
+        <h3>تذاكر الطيران</h3>
+        <p>
+          مساعدتك في البحث عن رحلات الطيران واختيار ما يناسب
+          وجهتك وموعدك.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌍</div>
+        <h3>السفر والسياحة</h3>
+        <p>
+          نساعدك في التخطيط لرحلتك القادمة واكتشاف وجهات جديدة.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🧳</div>
+        <h3>خدمة المسافرين</h3>
+        <p>
+          اهتمام ومتابعة لتجربة سفر أكثر سهولة وراحة.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="callout">
+  <div class="container">
+    <h2>جاهز لرحلتك القادمة؟</h2>
+    <p>تواصل معنا ودعنا نساعدك في اتخاذ أول خطوة.</p>
+
+    <a class="btn" href="https://wa.me/249964860194">
+      تواصل عبر واتساب ↗
+    </a>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <span>نحن قريبون منك</span>
+      <h2>تواصل معنا</h2>
+      <p>يسعدنا استقبال رسالتك والإجابة عن استفساراتك.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-box">
+        <h2>خلّينا نخطط لرحلتك</h2>
+        <p>
+          أرسل لنا رسالة على واتساب، وسنكون سعداء بمساعدتك.
+        </p>
+
+        <a class="whatsapp" href="https://wa.me/249964860194">
+          ☏ واتساب · +249 964 860 194
+        </a>
+      </div>
+
+      <div class="social-grid">
+
+        <div class="social">
+          <h3>Instagram</h3>
+          <p>قريباً</p>
+        </div>
+
+        <div class="social">
+          <h3>Twitter / X</h3>
+          <p>قريباً</p>
+        </div>
+
+        <div class="social">
+          <h3>Facebook</h3>
+          <p>قريباً</p>
+        </div>
+
+        <div class="social">
+          <h3>REINS</h3>
+          <p>تابعونا للمزيد</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="logo">
+    رينز
+    <small>REINS TRAVEL & TOURISM</small>
+  </div>
+
+  <p>رينز للسفر والسياحة</p>
+  <p>جميع الحقوق محفوظة © 2026</p>
+</footer>
 
 </body>
 </html>
