@@ -1,59 +1,184 @@
+footer {
+background:#075078;
+color:#d9f4ff;
+text-align:center;
+padding:40px 15px;
+font-size:19px;
+line-height:2;
+}
+
+footer .logo {
+color:white;
+margin-bottom:12px;
+}
+
+footer .logo small {color:#bceaff;}
+
+@media(max-width:750px) {
+header {padding:17px 6%;}
+.hero {
+min-height:650px;
+padding:60px 7%;
+flex-direction:column;
+text-align:center;
+justify-content:center;
+}
+.hero h1 {font-size:65px;}
+.hero p {font-size:21px;}
+.plane {font-size:150px;}
+section {padding:65px 6%;}
+.title {font-size:37px;}
+.grid {grid-template-columns:1fr;}
+.contact-grid {grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+REINS
+<small>TRAVEL & TOURISM</small>
+</div>
+<a href="#contact" class="nav">تواصل معنا</a>
+</header>
+
+<div class="hero">
+
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+
+<div class="hero-text">
+<div class="tag">✈ وكالة رينز للسفر والسياحة</div>
+
+<h1>
+العالم<br>
+<span>ينتظرك.</span>
+</h1>
+
+<p>
+رحلتك القادمة تبدأ بخطوة.
+نحن هنا لنقرّب المسافات ونساعدك
+في الوصول إلى وجهتك بكل سهولة.
+</p>
+
+<a class="btn"
+href="https://wa.me/249964860194?text=مرحباً%20رينز،%20أرغب%20في%20الاستفسار%20عن%20خدماتكم"
+target="_blank">
+ابدأ رحلتك معنا ←
+</a>
+</div>
+
+<div class="plane">✈️</div>
+
+</div>
+
+<section id="about">
+
+<h2 class="title">مرحباً بك في رينز</h2>
+<p class="sub">REINS TRAVEL & TOURISM</p>
+
 <div class="about">
-    رينز وكالة متخصصة في السفر والسياحة،
-    نعمل على تقديم خدمات السفر وتذاكر الطيران،
-    ونسعى لتوفير تجربة سهلة ومميزة
-    لكل مسافر يبحث عن وجهته القادمة.
-    <br>
-    <strong style="color:#078bc9;">
-      وجهتك تهمنا، ورحلتك مسؤوليتنا.
-    </strong>
-  </div>
+نحن وكالة رينز للسفر والسياحة،
+نعمل على تقديم خدمات السفر وتذاكر الطيران،
+ونسعى لتوفير تجربة سفر سهلة ومميزة
+لكل مسافر يبحث عن وجهته القادمة.
+
+<br>
+
+<span class="highlight">
+وجهتك تهمنا، ورحلتك مسؤوليتنا.
+</span>
+</div>
+
 </section>
 
-<section class="contact">
-  <h2 class="section-title">تواصل معنا</h2>
-  <p class="section-desc">
-    نحن على بُعد رسالة واحدة منك.
-  </p>
+<section class="services">
 
-  <div class="socials">
+<h2 class="title">خدماتنا</h2>
+<p class="sub">نرافقك في كل خطوة من رحلتك</p>
 
-    <a class="social whatsapp"
-       href="https://wa.me/249964860194"
-       target="_blank">
-      <span class="icon">💬</span>
-      <h3>واتساب</h3>
-      <p>+249 964 860 194</p>
-      <p>ابدأ المحادثة ←</p>
-    </a>
+<div class="grid">
 
-    <div class="social">
-      <span class="icon">📸</span>
-      <h3>Instagram</h3>
-      <p>قريباً</p>
-    </div>
+<div class="card">
+<div class="emoji">✈️</div>
+<h3>تذاكر الطيران</h3>
+<p>خدمات حجز تذاكر الطيران ومساعدتك في اختيار رحلتك.</p>
+</div>
 
-    <div class="social">
-      <span class="icon">𝕏</span>
-      <h3>Twitter / X</h3>
-      <p>قريباً</p>
-    </div>
+<div class="card">
+<div class="emoji">🌍</div>
+<h3>السفر والسياحة</h3>
+<p>نساعدك في التخطيط لوجهتك القادمة.</p>
+</div>
 
-    <div class="social">
-      <span class="icon">ⓕ</span>
-      <h3>Facebook</h3>
-      <p>قريباً</p>
-    </div>
+<div class="card">
+<div class="emoji">🧳</div>
+<h3>خدمة المسافرين</h3>
+<p>اهتمام ومتابعة لتجربة سفر أكثر سهولة.</p>
+</div>
 
-  </div>
+</div>
 </section>
-</main>
+
+<section class="contact" id="contact">
+
+<h2 class="title">تواصل معنا</h2>
+<p class="sub">نحن على بُعد رسالة واحدة منك</p>
+
+<div class="contact-grid">
+
+<a class="contact-card whatsapp"
+href="https://wa.me/249964860194"
+target="_blank">
+
+<div class="contact-icon">💬</div>
+<div>
+<h3>WhatsApp</h3>
+<p>+249 964 860 194</p>
+<p>ابدأ المحادثة ←</p>
+</div>
+</a>
+
+<div class="contact-card">
+<div class="contact-icon">📸</div>
+<div>
+<h3>Instagram</h3>
+<p>قريباً</p>
+</div>
+</div>
+
+<div class="contact-card">
+<div class="contact-icon">𝕏</div>
+<div>
+<h3>Twitter / X</h3>
+<p>قريباً</p>
+</div>
+</div>
+
+<div class="contact-card">
+<div class="contact-icon">ⓕ</div>
+<div>
+<h3>Facebook</h3>
+<p>قريباً</p>
+</div>
+</div>
+
+</div>
+</section>
 
 <footer>
-  <div class="logo" style="color:white;">REINS.</div>
-  <p>رينز للسفر والسياحة</p>
-  <p>جميع الحقوق محفوظة © 2026</p>
-  <p>Made with care by <strong>REINS</strong></p>
+
+<div class="logo">
+REINS
+<small>TRAVEL & TOURISM</small>
+</div>
+
+<p>رينز للسفر والسياحة</p>
+<p>جميع الحقوق محفوظة © 2026</p>
+<p>Made with care by REINS</p>
+
 </footer>
 
 </body>
